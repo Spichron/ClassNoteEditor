@@ -1967,11 +1967,10 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get('/notlar').then(function (response) {
         _this.notlar = response.data;
+        console.log(response);
       });
     },
     update: function update() {
-      var _this2 = this;
-
       this.notlar.forEach(function (not) {
         axios.put('/notlar', {
           yazili_1: not.yazili_1,
@@ -1981,10 +1980,9 @@ __webpack_require__.r(__webpack_exports__);
           performans_2: not.performans_2,
           proje: not.proje,
           ogrenci_no: not.ogrenci_no
-        }).then(function () {
-          _this2.index();
         });
       });
+      this.index();
     },
     updateValue: function updateValue(event, value) {
       var updatedValue = '';

@@ -86,6 +86,7 @@ export default
               axios.get('/notlar')
             .then((response)=>{
                 this.notlar = response.data;
+                console.log(response);
             })
         },
         
@@ -99,10 +100,9 @@ export default
                     performans_2 : not.performans_2,
                     proje : not.proje,
                     ogrenci_no : not.ogrenci_no
-                }).then(()=>{
-                    this.index();
-                })  
+                })
             });
+            this.index();
         },
 
         updateValue(event, value) {
