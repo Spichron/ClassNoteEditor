@@ -106,7 +106,6 @@ export default
         },
 
         updateValue(event, value) {
-            console.log(Math.max(5,5));
             var updatedValue = '';
             var code = (event.which) ? event.which : event.keyCode;
             if ( (code >= 48 && code <= 57)) {

@@ -1987,7 +1987,6 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     updateValue: function updateValue(event, value) {
-      console.log(Math.max(5, 5));
       var updatedValue = '';
       var code = event.which ? event.which : event.keyCode;
 
