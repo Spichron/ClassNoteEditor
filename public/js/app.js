@@ -1967,7 +1967,6 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get('/notlar').then(function (response) {
         _this.notlar = response.data;
-        console.log(response);
       });
     },
     update: function update() {

@@ -86,7 +86,6 @@ export default
               axios.get('/notlar')
             .then((response)=>{
                 this.notlar = response.data;
-                console.log(response);
             })
         },
         
